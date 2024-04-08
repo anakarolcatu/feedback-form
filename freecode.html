@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Customer Feedback Survey Form</title>
+</head>
+<body>
+  <div class="container">
+  <header>
+  <h1 id="title">Customer Feedback Survey Form</h1>
+  <p id="description">Thank you for taking time to help us to improve our services</p>
+  </header>
+  <main>
+    <!-- basic info-->
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" required placeholder="Enter your Name">
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" required placeholder="Enter your Email">
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age <span class="opt">(optional)</span></label>
+        <input id="number" type="number" min="5" max="100" placeholder="Enter your Age">
+      </div>
+<!-- dropdown menu-->
+      <div class="form-group">
+        <label for="dropdown">Which option best describes your current role? </label>
+        <select id="dropdown">
+          <option value="0">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Part Time Job</option>
+          <option value="4">Business Owner</option>
+          <option value="5">Prefer not to say</option>
+          <option value="6">Other</option>
+        </select>
+      </div>
+<!--radio menu-->
+      <div class="form-group">
+        <label for="radio">Would you consider making another purchase in the future? </label>
+    
+        <label for="yes"><input type="radio" name="radio-group" class="radio-group" id="not-sure" value="1"> Yes</label>
+      
+          <label for="not-sure"><input type="radio" name="radio-group" class="radio-group" id="not-sure" value="2">Not Sure</label>
+      
+          <label for="no"><input type="radio" name="radio-group" class="radio-group" id="no" value="3">No</label>
+      </div>
+<!--Checkbox-->
+      <div class="form-group">
+        <label>What product did you purchase? </label>
+        
+        <label for="virtual-catalog"><input type="checkbox" class="checkbox" value="0" id="virtual-catalog"> Virtual Catalog</label>
+        
+        <label for="in-store"><input type="checkbox" class="checkbox" value="1" id="in-store"> In-store Catalog</label>
+      
+        <label for="booklet"><input type="checkbox" class="checkbox" value="2" id="booklet"> Personalized Booklet</label>
+        
+        <label for="stickers"><input type="checkbox" class="checkbox" value="3" id="stickers"> Label Stickers</label>
+        
+        <label for="earrings"><input type="checkbox" class="checkbox" value="4" id="earrings"> Pixel Earrings</label>
+      </div>
+<!--Text area-->
+      <div class="form-group">
+        <label for="textarea">Do you have any sugestions or complains? </label>
+        <textarea name="sugestions" id="sugestions" cols="30" rows="10" class="textarea" placeholder="Put your sugestions here..."></textarea>
+      </div>
+<!--Submit Button-->
+      <div class="form-group">
+        <input id="submit" type="submit" class="button">
+      </div>
+    </form>
+  </div>
+  </main>
+</body>
+</html>
